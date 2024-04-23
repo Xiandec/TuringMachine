@@ -2,7 +2,7 @@ import re
 
 class TuringMachine:
     def start_machine(path: str = 'table.txt') -> None:
-        with open('table.txt', 'r') as f:
+        with open(path, 'r') as f:
             program = f.read()
         line = program.split('\n', maxsplit=1)[0]
         programs = re.findall('q[0-9]{1,}#[0-9]{1,}q[0-9]{1,}#[0-9]{1,}[RLS]', program)
