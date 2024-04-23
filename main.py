@@ -58,7 +58,7 @@ class TuringMachine:
                     print(''.join(comands))
                 else:
                     run = False
-        print(''.join(comands), 'EXIT', sep='\n')
+        print('---------------', ''.join(comands), 'EXIT', sep='\n')
         return 
 if __name__ == '__main__':
     TuringMachine.start_machine()
